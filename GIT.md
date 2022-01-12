@@ -14,3 +14,65 @@ $ git config --global --list
 $ git config --global -l
 ```
 
+
+
+## git init
+
+* 현재 작업중인 directory git으로 관리
+* **주의!** 이미 master로 관리중인 폴더 내에서 절대로 git init 금지
+
+
+
+## git status
+
+* Working directory와 Staging Area에 있는 파일들의 현재 상태를 확인
+* 상태
+  1. untracked : git이 관리하지 않는 파일
+  2. tracked : git이 관리하는 파일
+     1. unmodified : 최신 상태
+     2. Modified : 수정되었지만 commit을 남기기 전
+     3. staged : Staging area에 반영된 상태
+
+
+
+## git add
+
+```bash
+# 특정 파일
+$ git add file_name.txt
+
+# 특정 폴더
+$ git add folder/
+
+# 현재 디렉토리에 속한 모든 파일/폴더
+$ git add .
+```
+
+
+
+## git commit
+
+```bash
+# Staging area에 올라온 파일의 변경 사항을 하나의 버전으로 저장하는 명령어
+# commit 메세지는 현재 변경사항을 기록하는 용도로 사용
+
+$ git commit -m "commit 메세지"
+```
+
+
+
+## git log
+
+```bash
+# 커밋의 내역을 조회할 수 있는 명령어
+
+# 옵션
+$ git log --oneline : 한 줄로 축약해서 보여줌
+
+$ git log --gragh : 브랜치와 머지 내역을 그래프로 보여줌
+
+$ git log --all : 모든 브랜치의 내역 확인
+
+$ git log --reverse : 커밋 내역의 순서를 반대로 보여줌
+```
+

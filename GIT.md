@@ -37,6 +37,8 @@ $ git config --global -l
 
 ## git add
 
+* git이 추적할 파일/폴더 선택하기
+
 ```bash
 # 특정 파일
 $ git add file_name.txt
